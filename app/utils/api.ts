@@ -9,7 +9,7 @@ export function useAPI(api: string, options?: object): Promise<unknown> {
   })).catch((error) => {
     if (error?.status === 401) {
       localStorage.removeItem('SinkSiteToken')
-      navigateTo('/dashboard/login')
+      navigateTo('/')
     }
     if (error?.data?.statusMessage) {
       toast(error?.data?.statusMessage)
