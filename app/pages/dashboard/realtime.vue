@@ -1,6 +1,12 @@
+<script setup>
+definePageMeta({
+  layout: 'dashboard',
+})
+</script>
+
 <template>
-  <main class="space-y-6">
+  <div class="space-y-6">
     <DashboardBreadcrumb title="Realtime" />
     <DashboardRealtime />
-  </main>
+  </div>
 </template>

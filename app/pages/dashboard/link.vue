@@ -1,4 +1,8 @@
 <script setup>
+definePageMeta({
+  layout: 'dashboard',
+})
+
 const slug = useRoute().query.slug
 
 const link = ref({})
@@ -30,7 +34,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="space-y-6">
+  <div class="space-y-6">
     <DashboardBreadcrumb title="Link" />
     <DashboardLinksLink
       v-if="link.id"
@@ -41,5 +45,5 @@ onMounted(() => {
       v-if="link.id"
       :link="link"
     />
-  </main>
+  </div>
 </template>
