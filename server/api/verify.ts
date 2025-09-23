@@ -14,7 +14,7 @@ defineRouteMeta({
 
 export default eventHandler(() => {
   return {
-    name: 'Sink',
+    name: 'A8K Go',
     url: 'https://sink.cool',
   }
 })
